@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/Menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="10"
+        android:background="#320864"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:background="#320864"
+            android:minWidth="64dp"
+            android:src="@android:drawable/ic_menu_sort_by_size"
+            tools:ignore="ContentDescription,NestedWeights,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck"
+            app:tint="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="20dp"
+            android:text="Danh Ba"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            tools:ignore="HardcodedText" />
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            android:layout_weight="0"
+            android:background="#320864"
+            android:minWidth="64dp"
+            android:src="@android:drawable/ic_menu_search"
+            tools:ignore="ContentDescription,SpeakableTextPresentCheck,TouchTargetSizeCheck,ImageContrastCheck" />
+
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
+
+
+</LinearLayout>
